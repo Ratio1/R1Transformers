@@ -55,11 +55,13 @@ def rope(x, theta_base=10000.0):
   return x_rotated
 
 
-def init_weights(model):
+def init_weights(model, log_structure=False):
   """
   Initialize the weights of different model components using appropriate schemes.
   Each layer type receives specialized initialization for optimal training.
   """
+  if log_structure:
+    print(f"Model structure:\n{model}")
   for module in model.modules():
     if isinstance(module, th.nn.Linear):
       # Xavier uniform initialization for linear layers

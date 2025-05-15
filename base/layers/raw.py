@@ -167,7 +167,7 @@ class DecoderLanguageModel(th.nn.Module):
     self.output = th.nn.Parameter(th.rand(emb_dim, vocab_size))
     
     if init:
-      init_weights(self)
+      init_weights(self, log_structure=True)
     return
 
   def forward(self, x):
