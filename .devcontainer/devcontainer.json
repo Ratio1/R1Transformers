@@ -1,0 +1,23 @@
+{
+  "name" : "Ratio1 Transformers DevEnv",
+  "dockerFile" : "Dockerfile",
+  "context": ".",
+  
+  "runArgs": [
+    "--gpus=all",
+    "--hostname",
+    "r1_llm",
+    
+    "--name",
+    "r1_llm"
+  ],  
+  
+  "customizations": {
+    "vscode" : {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+accelerate
+bitsandbytes
+datasets
+huggingface_hub
+jupyterlab
+numpy
+peft
+sentencepiece
+safetensors
+tokenizers
+transformers
